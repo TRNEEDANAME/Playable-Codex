@@ -1,5 +1,6 @@
 class PA_CodexTech extends X2StrategyElement config(XcomStrategyTuning);
 
+var config int PointsToComplete;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -14,8 +15,6 @@ static function X2DataTemplate CreatePA_Codex_TechTemplate()
 {
 
     local X2TechTemplate Template;
-    local ArtifactCost Artifacts;
-    local ArtifactCost Resources;
 
     `CREATE_X2TEMPLATE(class'X2TechTemplate', Template, 'PA_Codex_Tech');
     Template.bProvingGround = true;

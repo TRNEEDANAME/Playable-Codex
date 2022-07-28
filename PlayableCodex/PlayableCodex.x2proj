@@ -50,5 +50,7 @@
     <Content Include="PublishedFileId.ID" />
     <Content Include="Config\XComStrategyTuning.ini" />
     <Content Include="README.md" />
+    <Content Include="Config\XcomGameData_PACodexAbility.ini" />
+    <Content Include="Src\PlayableCodex\Classes\PA_CodexAbility.uc" />
   </ItemGroup>
 </Project>

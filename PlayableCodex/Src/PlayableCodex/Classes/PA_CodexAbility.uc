@@ -1,6 +1,7 @@
 class PA_CodexAbility extends X2Ability config(GameData_PACodexAbility);
 
-var config int PACodex_TP_DisplayInSummary;
+var config bool PACodex_TP_DisplayInSummary;
+var config bool PACodex_TP_ConsumeAllAP;
 var config int PACodex_TP_ActionPointCost;
 var config int PACodex_TP_Cooldown;
 var config int PACodex_TP_Radius;
@@ -8,14 +9,16 @@ var config int PACodex_TP_Radius;
 static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Templates;
-	
+
 	Templates.AddItem(PACodex_TP());
+	return Templates;
+}
 
 static function X2AbilityTemplate PACodex_TP()
 {
 	local X2AbilityTemplate Template;
 	local X2AbilityCost_ActionPoints ActionPointCost;
-	local X2AbilityCooldown_LocalAndGlobal Cooldown;
+	local X2AbilityCooldown Cooldown;
 	local X2AbilityTarget_Cursor CursorTarget;
 	local X2AbilityMultiTarget_Radius RadiusMultiTarget;
 	local X2Condition_UnitProperty UnitProperty;
