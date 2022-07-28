@@ -72,8 +72,8 @@ static function X2AbilityTemplate PACodex_TP()
 
 	Template.bShowActivation = false;
 	Template.ModifyNewContextFn = class'X2Ability_Cyberus'.static.Teleport_ModifyActivatedAbilityContext;
-	Template.BuildNewGameStateFn = Teleport_BuildGameState;
-	Template.BuildVisualizationFn = Teleport_BuildVisualization;
+	Template.BuildNewGameStateFn = class 'X2Ability_Cyberus'.static.Teleport_BuildGameState;
+	Template.BuildVisualizationFn = class'X2Ability_Cyberus'.static.Teleport_BuildVisualization;
 	Template.CinescriptCameraType = "Cyberus_Teleport";
 
 	return Template;
