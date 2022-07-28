@@ -1,0 +1,26 @@
+[CodexClass X2SoldierClassTemplate]
++DisplayName="Codex"
++ClassSummary="An entity that as far as we know *doesn't* exist on a physical level."
++LeftAbilityTreeTitle="Codex"
++RightAbilityTreeTitle="Codex"
++AbilityTreeTitles[0]="Codex"
++AbilityTreeTitles[1]="Codex"
++AbilityTreeTitles[3]="XCOM"
+;ALPHABETICAL ORDER
++RandomNickNames[0]="Codex"
++RandomNickNames[1]="Cyberus"
++RandomNickNames[2]="Vix"
++RandomNickNames[4]="Firewall"
++RandomNickNames[5]="Shiny"
++RandomNickNames[6]="Screech"
+
+[PA_Codex_Tech X2TechTemplate]
+DisplayName="Reprogramming a Codex"
+Summary="We can reprogram a Codex to work for us, but it'll take some effort."
+CodeName="Project Vix"
+LongDescript="The reprogramming of the Codex was a success."
+
+[Codex_WPN X2WeaponTemplate]
+FriendlyName="Codex's weapon"
+BriefSummary="The plasma rifle wield by codex is different than the others rifle used by the aliens, it seems to be wired to them specifically, allowing them to teleport with it."
+TacticalText="<Bullet/> Reloading is for casual \n - Sun Tzu/>"
