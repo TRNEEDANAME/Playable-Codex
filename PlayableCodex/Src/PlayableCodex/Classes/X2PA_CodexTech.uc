@@ -1,4 +1,4 @@
-class PA_CodexTech extends X2StrategyElement config(XcomStrategyTuning);
+class X2PA_CodexTech extends X2StrategyElement config(XcomStrategyTuning);
 
 var config int PointsToComplete;
 

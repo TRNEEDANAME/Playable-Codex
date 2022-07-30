@@ -1,4 +1,4 @@
-class PA_CodexAbility extends X2Ability config(GameData_PACodexAbility);
+class X2PA_CodexAbility extends X2Ability config(GameData_PACodexAbility);
 
 // ============================================================
 // Codex Teleport Ability
@@ -583,6 +583,7 @@ simulated function PACodex_PsiBombStage1_BuildAffectedVisualization(name EffectN
 		SoundAction.vWorldPosition = EffectAction.EffectLocation;
 	}
 }
+
 
 static function X2AbilityTemplate PACodex_PsiBombStage2()
 {
