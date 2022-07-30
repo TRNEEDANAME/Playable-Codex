@@ -136,3 +136,19 @@ static function bool AbilityTagExpandHandler(string InString, out string OutStri
             return false;
     }  
 }
+
+static function bool AbilittyTagExpandHandler(string InString, out string OutString)
+{
+    local name PACodex_PsiBomb_ActionPointCost;
+
+    PACodex_PsiBomb_ActionPointCost = name(InString);
+
+    switch (PACodex_PsiBomb_ActionPointCost)
+    {
+    case 'PACodex_PsiBomb_ActionPointCost':
+        OutString = string(class'PA_CodexAbility'.default.PACodex_PsiBombStage1_ActionPointCost);
+
+    default:
+            return false;
+    }  
+}
