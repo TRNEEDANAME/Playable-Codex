@@ -117,4 +117,22 @@ static function bool IsResearchInHistory(name ResearchName)
         }
     }
     return false;
+
+
+}
+
+static function bool AbilityTagExpandHandler(string InString, out string OutString)
+{
+    local name PACodex_TP_ActionPointCost;
+
+    PACodex_TP_ActionPointCost = name(InString);
+
+    switch (PACodex_TP_ActionPointCost)
+    {
+    case 'PACodex_TP_ActionPointCost':
+		OutString = string(class'PA_CodexAbility'.default.PACodex_TP_ActionPointCost);
+
+    default:
+            return false;
+    }  
 }

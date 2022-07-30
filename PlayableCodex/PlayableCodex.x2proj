@@ -35,9 +35,6 @@
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
-    <Content Include="ReadMe.txt">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Src\PlayableCodex\Classes\PA_CodexTech.uc">
       <SubType>Content</SubType>
     </Content>

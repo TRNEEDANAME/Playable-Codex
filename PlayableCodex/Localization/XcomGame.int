@@ -21,6 +21,14 @@ CodeName="Project Vix"
 LongDescript="The reprogramming of the Codex was a success."
 
 [Codex_WPN X2WeaponTemplate]
-FriendlyName="Codex's weapon"
+FriendlyName="Codex Rifle"
+FriendlyNamePlural="Codex Rifles"
 BriefSummary="The plasma rifle wield by codex is different than the others rifle used by the aliens, it seems to be wired to them specifically, allowing them to teleport with it."
 TacticalText="<Bullet/> Reloading is for casual \n - Sun Tzu/>"
+
+[PACodex_TP X2AbilityTemplate]
+LocFriendlyName="Teleport"
+LocHelpText="This ability allows the Codex to teleport to a destination. This action cost +<ability:PA_Codex_TP_AP_Cost/>."
+LocLongDescription="This ability allows the Codex to teleport to a destination. Costs +<ability:PA_Codex_TP_AP_Cost/>."
+LocFlyOverText="Teleport"
+LocFriendlyNameWhenConcealed="Teleport"
