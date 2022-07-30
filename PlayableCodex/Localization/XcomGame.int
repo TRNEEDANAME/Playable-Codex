@@ -34,7 +34,7 @@ LocFlyOverText="Teleport"
 LocFriendlyNameWhenConcealed="Teleport"
 
 [PACodex_PsiBombStage1 X2AbilityTemplate]
-LocFriendlyName="Psi Bomb"
-LocHelpText="This ability allows the Codex to teleport to a destination. This action cost +<ability:PACodex_PsiBomb_ActionPointCost/>."
-LocLongDescription="This ability allows the Codex to teleport to a destination. Costs +<ability:PACodex_PsiBomb_ActionPointCost/>."
-LocFlyOverText="Psi bomb"
+LocFriendlyName="Psionic Bomb"
+LocLongDescription="Open a small Psionic rift that disables the weapons of any units caught in its radius, and deals damage within that radius after one turn."
+LocHelpText="Open a small Psionic rift that disables the weapons of any units caught in its radius, and deals damage within that radius after one turn."
+LocFlyOverText="Psi Bomb"
