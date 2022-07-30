@@ -33,7 +33,7 @@ LocLongDescription="This ability allows the Codex to teleport to a destination. 
 LocFlyOverText="Teleport"
 LocFriendlyNameWhenConcealed="Teleport"
 
-[PACodex_PA_PsiBombStage1 X2AbilityTemplate]
+[PACodex_PsiBombStage1 X2AbilityTemplate]
 LocFriendlyName="Psi Bomb"
 LocHelpText="This ability allows the Codex to teleport to a destination. This action cost +<ability:PACodex_PsiBomb_ActionPointCost/>."
 LocLongDescription="This ability allows the Codex to teleport to a destination. Costs +<ability:PACodex_PsiBomb_ActionPointCost/>."
