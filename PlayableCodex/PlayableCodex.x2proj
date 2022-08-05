@@ -35,22 +35,18 @@
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
-    <Content Include="Src\PlayableCodex\Classes\PA_CodexTech.uc">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Src\PlayableCodex\Classes\X2Character_PlayableCodex.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\PlayableCodex\Classes\X2DownloadableContentInfo_PlayableCodex.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\PlayableCodex\Classes\X2Item_CodexWeapon.uc">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="PublishedFileId.ID" />
     <Content Include="Config\XComStrategyTuning.ini" />
     <Content Include="README.md" />
     <Content Include="Config\XcomGameData_PACodexAbility.ini" />
-    <Content Include="Src\PlayableCodex\Classes\PA_CodexAbility.uc" />
+    <Content Include="Src\PlayableCodex\Classes\X2Item_PA_CodexWeapon.uc" />
+    <Content Include="Src\PlayableCodex\Classes\X2PA_CodexAbility.uc" />
+    <Content Include="Src\PlayableCodex\Classes\X2PA_CodexTech.uc" />
   </ItemGroup>
 </Project>

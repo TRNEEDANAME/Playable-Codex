@@ -1,8 +1,8 @@
 class X2PA_CodexAbility extends X2Ability config(GameData_PACodexAbility);
 
-// ============================================================
-// Codex Teleport Ability
-// ============================================================
+// ============================================================ //
+// Codex Teleport Ability										//
+// ============================================================ //
 
 //* ------------------Define all variables for the abilities.------------------
 
@@ -15,9 +15,9 @@ var config int PACodex_TP_Cooldown;
 var config int PACodex_TP_RadiusTP;
 var config int PACodex_TP_Range;
 
-// ============================================================
-// Codex Psi Bomb Stage 1
-// ============================================================
+// ============================================================ //
+// Codex Psi Bomb Stage 1										//
+// ============================================================ //
 
 var config bool PACodex_PsiBombStage1_DontDisplayInSummary;
 var config bool PACodex_PsiBombStage1_ConsumeAllPoints;
@@ -28,35 +28,39 @@ var config int PACodex_PsiBombStage1_Cooldown;
 var config int PACodex_PsiBombStage1_Radius;
 var config int PACodex_PsiBombStage1_AbilityRange;
 
-// ============================================================
-// Codex Psi Bomb Stage 2
-// ============================================================
+// ============================================================ //
+// Codex Psi Bomb Stage 2										//
+// ============================================================ //
 
 var config bool PACodex_PsiBombStage2_DontDisplayInSummary;
-var config bool PACodex_PsiBombStage2_IgnoreArmor;
+var config WeaponDamageValue PACodex_PsiBombStage2_Damage;
+
+var config bool PACodex_DoesPsiBombStage2_IgnoreBlockingCover;
+var config bool PACodex_DoesPsiBombStage2_ExcludeFriendlyToSource;
+var config bool PACodex_DoesPsiBombStage2_ExcludeHostileToSource;
 
 var name Stage1PsiBombEffectName;
 var name PsiBombTriggerName;
 
-//! ------------------FX VARIABLE FOR THE PSI BOMB------------------
+//! ------------------FX VARIABLE FOR THE PSI BOMB------------------ !//
 
 var config float PSI_BOMB_STAGE1_START_WARNING_FX_SEC;
 var config float PSI_BOMB_STAGE2_START_EXPLOSION_FX_SEC;
 var config float PSI_BOMB_STAGE2_NOTIFY_TARGETS_SEC;
 
-//! ------------------END FX VARIABLE FOR THE PSI BOMB---------------
+//! ------------------END FX VARIABLE FOR THE PSI BOMB--------------- !//
 
 var config StatCheck PSI_BOMB_SOURCE_CHECK;
 var config StatCheck PSI_BOMB_TARGET_CHECK;
 
-//* ------------------End of variables for the abilities.------------------
+//* ------------------End of variables for the abilities.------------------ *//
 
 
 // ========================================================================================================================================
 // ========================================================================================================================================
 
 
-//* ------------------Define all the templates for the abilities.------------------
+//* ------------------Define all the templates for the abilities.------------------ *//
 static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Templates;
@@ -603,8 +607,8 @@ static function X2AbilityTemplate PACodex_PsiBombStage2()
 	Template.AbilityToHitCalc = default.DeadEye;
 
 	LivingTargetCondition = new class'X2Condition_UnitProperty';
-	LivingTargetCondition.ExcludeFriendlyToSource = false;
-	LivingTargetCondition.ExcludeHostileToSource = false;
+	LivingTargetCondition.ExcludeFriendlyToSource = default.PACodex_DoesPsiBombStage2_ExcludeFriendlyToSource;
+	LivingTargetCondition.ExcludeHostileToSource = default.PACodex_DoesPsiBombStage2_ExcludeHostileToSource;
 	LivingTargetCondition.ExcludeAlive = false;
 	LivingTargetCondition.ExcludeDead = true;
 	LivingTargetCondition.FailOnNonUnits = true;
@@ -612,10 +616,9 @@ static function X2AbilityTemplate PACodex_PsiBombStage2()
 
 	RadiusMultiTarget = new class'X2AbilityMultiTarget_Radius';
 	RadiusMultiTarget.fTargetRadius = default.PACodex_PsiBombStage1_Radius;
-	RadiusMultiTarget.bIgnoreBlockingCover = true;
+	RadiusMultiTarget.bIgnoreBlockingCover = default.PACodex_DoesPsiBombStage2_IgnoreBlockingCover;
 	Template.AbilityMultiTargetStyle = RadiusMultiTarget;
 
-	// TODO: This doesn't actually target self but needs an AbilityTargetStyle
 	Template.AbilityTargetStyle = default.SelfTarget;
 
 	// This ability fires when the event DelayedExecuteRemoved fires on this unit
@@ -632,8 +635,8 @@ static function X2AbilityTemplate PACodex_PsiBombStage2()
 
 	RiftDamageEffect = new class'X2Effect_ApplyWeaponDamage';
 	RiftDamageEffect.EffectDamageValue.DamageType = 'Psi';
-	RiftDamageEffect.EffectDamageValue = class'X2Item_DefaultWeapons'.default.CYBERUS_PSI_BOMB_BASEDAMAGE;
-	RiftDamageEffect.bIgnoreArmor = default.PACodex_PsiBombStage2_IgnoreArmor;
+	RiftDamageEffect.EffectDamageValue = default.PACodex_PsiBombStage2_Damage;
+	RiftDamageEffect.bIgnoreArmor = default.PACodex_DoesPsiBombStage2_IgnoreBlockingCover;
 	Template.AddMultiTargetEffect(RiftDamageEffect);
 
 	Template.bSkipFireAction = true;

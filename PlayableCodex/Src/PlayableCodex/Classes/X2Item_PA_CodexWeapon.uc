@@ -8,7 +8,6 @@ var config int PACodex_Weapon_ClipSize;
 var config int PACodex_Weapon_ISOUNDRANGE;
 var config int PACodex_Weapon_EnvironmentalDamage;
 var config int PACodex_Weapon_SoundRange;
-var config int PACodex_Weapon_BaseDamage;
 var config int PACodex_Weapon_IdealRange;
 
 static function array<X2DataTemplate> CreateTemplates()
