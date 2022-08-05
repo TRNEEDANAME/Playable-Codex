@@ -53,14 +53,14 @@ var config float PSI_BOMB_STAGE2_NOTIFY_TARGETS_SEC;
 var config StatCheck PSI_BOMB_SOURCE_CHECK;
 var config StatCheck PSI_BOMB_TARGET_CHECK;
 
-//* ------------------End of variables for the abilities.------------------ *//
+//* ------------------End of variables for the abilities.------------------ //
 
 
 // ========================================================================================================================================
 // ========================================================================================================================================
 
 
-//* ------------------Define all the templates for the abilities.------------------ *//
+//* ------------------Define all the templates for the abilities.------------------ //
 static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Templates;
