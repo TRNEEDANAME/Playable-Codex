@@ -20,7 +20,7 @@ Summary="We can reprogram a Codex to work for us, but it'll take some effort."
 CodeName="Project Vix"
 LongDescript="The reprogramming of the Codex was a success."
 
-[Codex_WPN X2WeaponTemplate]
+[PACodex_WPN X2WeaponTemplate]
 FriendlyName="Codex Rifle"
 FriendlyNamePlural="Codex Rifles"
 BriefSummary="The plasma rifle wield by codex is different than the others rifle used by the aliens, it seems to be wired to them specifically, allowing them to teleport with it."

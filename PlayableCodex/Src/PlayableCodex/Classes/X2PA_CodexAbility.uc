@@ -321,6 +321,7 @@ static function X2AbilityTemplate PACodex_PsiBombStage1()
 	Template.AdditionalAbilities.AddItem('PACodex_PsiBombStage2');
 	Template.TwoTurnAttackAbility = 'PACodex_PsiBombStage2';
 	Template.IconImage = "img:///UILibrary_PerkIcons.UIPerk_psibomb";
+	Template.bDontDisplayInAbilitySummary = PACodex_PsiBombStage1_DontDisplayInSummary;
 
 	Template.eAbilityIconBehaviorHUD = eAbilityIconBehavior_AlwaysShow;
 	Template.AbilitySourceName = 'eAbilitySource_Psionic';
