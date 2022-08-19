@@ -2,10 +2,10 @@ class X2Item_PA_CodexWeapon extends X2Item config(GameData_WeaponData);
 
 var config WeaponDamageValue PACodex_Weapon_BaseDamage;
 
-var config array<int> FLAT_BEAM_RANGE;
+var config array<int> PACodex_We;
 
 var config int PACodex_Weapon_ClipSize;
-var config int PACodex_Weapon_ISOUNDRANGE;
+var config int PACodex_Weapon_SoundRange;
 var config int PACodex_Weapon_EnvironmentalDamage;
 var config int PACodex_Weapon_SoundRange;
 var config int PACodex_Weapon_IdealRange;
@@ -34,7 +34,7 @@ static function X2DataTemplate CreateTemplate_Codex_WPN()
 	Template.strImage = "img:///UILibrary_Common.AlienWeapons.ViperRifle";
 	Template.RemoveTemplateAvailablility(Template.BITFIELD_GAMEAREA_Multiplayer); //invalidates multiplayer availability
 
-	Template.RangeAccuracy = default.FLAT_BEAM_RANGE;
+	Template.RangeAccuracy = default.PACodex_Weapon_IdealRange;
 	Template.BaseDamage = default.PACodex_Weapon_BaseDamage;
 	Template.iClipSize = default.PACodex_Weapon_ClipSize;
 	Template.iSoundRange = default.PACodex_Weapon_SoundRange;
