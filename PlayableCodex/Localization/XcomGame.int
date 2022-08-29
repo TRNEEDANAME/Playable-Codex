@@ -20,7 +20,7 @@ Summary="We can reprogram a Codex to work for us, but it'll take some effort."
 CodeName="Project Vix"
 LongDescript="The reprogramming of the Codex was a success."
 
-[PACodex_WPN X2WeaponTemplate]
+[PA_Codex_WPN X2WeaponTemplate]
 FriendlyName="Codex Rifle"
 FriendlyNamePlural="Codex Rifles"
 BriefSummary="The plasma rifle wield by codex is different than the others rifle used by the aliens, it seems to be wired to them specifically, allowing them to teleport with it."
@@ -38,3 +38,8 @@ LocFriendlyName="Psionic Bomb"
 LocLongDescription="Open a small Psionic rift that disables the weapons of any units caught in its radius, and deals damage within that radius after one turn."
 LocHelpText="Open a small Psionic rift that disables the weapons of any units caught in its radius, and deals damage within that radius after one turn."
 LocFlyOverText="Psi Bomb"
+
+[Tech_CorpseCyberus X2ItemTemplate]
+FriendlyName="Codex Corpse"
+FriendlyNamePlural="Codex Corpses"
+BriefSummary="A codex corpse used for recreating Codex."
