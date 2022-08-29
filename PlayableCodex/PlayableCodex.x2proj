@@ -48,5 +48,7 @@
     <Content Include="Src\PlayableCodex\Classes\X2Item_PA_CodexWeapon.uc" />
     <Content Include="Src\PlayableCodex\Classes\X2PA_CodexAbility.uc" />
     <Content Include="Src\PlayableCodex\Classes\X2PA_CodexTech.uc" />
+    <Content Include="Config\XcomGameCore.ini" />
+    <Content Include="Src\PlayableCodex\Classes\X2Item_PA_CodexCorpse.uc" />
   </ItemGroup>
 </Project>
