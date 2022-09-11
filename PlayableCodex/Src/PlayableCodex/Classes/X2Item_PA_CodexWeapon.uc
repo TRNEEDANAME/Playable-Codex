@@ -41,8 +41,6 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 	Template.iIdealRange = default.PA_Codex_Weapon_IdealRange;
 
 	Template.DamageTypeTemplateName = 'Heavy';
-	
-	Template.InfiniteAmmo = true;
 
 	Template.InventorySlot = eInvSlot_PrimaryWeapon;
 	Template.Abilities.AddItem('StandardShot');
