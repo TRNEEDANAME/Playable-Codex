@@ -50,5 +50,6 @@
     <Content Include="Src\PlayableCodex\Classes\X2PA_CodexTech.uc" />
     <Content Include="Config\XcomGameCore.ini" />
     <Content Include="Src\PlayableCodex\Classes\X2Item_PA_CodexCorpse.uc" />
+    <Content Include="Config\XcomInfiltration.ini" />
   </ItemGroup>
 </Project>

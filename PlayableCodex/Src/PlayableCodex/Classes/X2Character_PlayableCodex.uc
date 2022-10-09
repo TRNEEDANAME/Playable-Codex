@@ -22,9 +22,7 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.BehaviorClass=class'XGAIBehavior';
 	CharTemplate.strPawnArchetypes.AddItem("GameUnit_Cyberus.ARC_GameUnit_Cyberus");
 
-	CharTemplate.strMatineePackages.AddItem("CIN_Viper");
-	CharTemplate.strMatineePackages.AddItem("CIN_AdventMEC");
-	CharTemplate.strTargetingMatineePrefix = "CIN_AdventMEC_FF_StartPos";
+	CharTemplate.strMatineePackages.AddItem("CIN_Cyberus");
 
 	CharTemplate.UnitSize = 1;
 	// Traversal Rules
