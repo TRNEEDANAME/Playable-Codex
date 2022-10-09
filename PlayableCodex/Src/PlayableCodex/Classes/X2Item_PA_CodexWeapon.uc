@@ -6,10 +6,13 @@ var config array<int> PA_Codex_Weapon_RangeAccuracy;
 
 var config bool PA_Codex_Weapon_InfiniteAmmo;
 
+var config int PA_Codex_Weapon_Aim;
+var config int PA_Codex_Weapon_CritChance;
 var config int PA_Codex_Weapon_ClipSize;
 var config int PA_Codex_Weapon_SoundRange;
 var config int PA_Codex_Weapon_EnvironmentalDamage;
 var config int PA_Codex_Weapon_IdealRange;
+var config int PA_Codex_Weapon_NumUpgradeSlots;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -37,10 +40,14 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 
 	Template.RangeAccuracy = default.PA_Codex_Weapon_RangeAccuracy;
 	Template.BaseDamage = default.PA_Codex_Weapon_BaseDamage;
+	Template.Aim = default.PA_Codex_Weapon_Aim;
+	Template.CritChance = default.PA_Codex_Weapon_CritChance;
 	Template.iClipSize = default.PA_Codex_Weapon_ClipSize;
 	Template.iSoundRange = default.PA_Codex_Weapon_SoundRange;
 	Template.iEnvironmentDamage = default.PA_Codex_Weapon_EnvironmentalDamage;
 	Template.iIdealRange = default.PA_Codex_Weapon_IdealRange;
+
+	Template.NumUpgradeSlots = default.PA_Codex_Weapon_NumUpgradeSlots;
 
 	Template.DamageTypeTemplateName = 'Heavy';
 
