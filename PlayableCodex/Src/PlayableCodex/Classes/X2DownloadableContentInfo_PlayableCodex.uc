@@ -42,7 +42,7 @@ exec function AddCodexSquaddie()
 		NewSoldierState.ApplySquaddieLoadout(NewGameState, XComHQ);
 		NewSoldierState.ApplyBestGearLoadout(NewGameState);
 		NewSoldierState.SetXPForRank(1);
-		NewSoldierState.SetKillsForRank(1);
+		NewSoldierState.SetKillsForRank(0);
 
 	if(NewGameState.GetNumGameStateObjects() > 0)
 	{
