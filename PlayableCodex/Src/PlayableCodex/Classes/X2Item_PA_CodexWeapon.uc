@@ -64,7 +64,7 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 	Template.iPhysicsImpulse = 5;
 
 	Template.CanBeBuilt = false;
-	Template.TradingPostValue = 30;
+	Template.StartingItem = false;
 	Template.bInfiniteItem = true;
 	Template.InfiniteAmmo = default.PA_Codex_Weapon_InfiniteAmmo;
 
