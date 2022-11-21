@@ -48,7 +48,6 @@ var config float PSI_BOMB_STAGE1_START_WARNING_FX_SEC;
 var config float PSI_BOMB_STAGE2_START_EXPLOSION_FX_SEC;
 var config float PSI_BOMB_STAGE2_NOTIFY_TARGETS_SEC;
 
-//! ------------------END FX VARIABLE FOR THE PSI BOMB--------------- !//
 
 var config StatCheck PSI_BOMB_SOURCE_CHECK;
 var config StatCheck PSI_BOMB_TARGET_CHECK;
