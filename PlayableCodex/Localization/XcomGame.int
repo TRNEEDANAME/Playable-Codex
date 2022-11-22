@@ -25,6 +25,7 @@ FriendlyName="Codex Rifle"
 FriendlyNamePlural="Codex Rifles"
 BriefSummary="The plasma rifle wield by codex is different than the others rifle used by the aliens, it seems to be wired to them specifically, allowing them to teleport with it."
 TacticalText="<Bullet/> Reloading is for casual \n - Sun Tzu/>"
+AbilityDescName="Codex Rifle"
 
 [PACodex_TP X2AbilityTemplate]
 LocFriendlyName="Teleport"
