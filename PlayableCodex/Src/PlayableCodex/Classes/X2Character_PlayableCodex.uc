@@ -41,7 +41,7 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.bAppearanceDefinesPawn = false;    
 	CharTemplate.bCanTakeCover = true;
 
-	CharTemplate.bIsAlien = true;
+	CharTemplate.bIsAlien = false;
 	CharTemplate.bIsAdvent = false;
 	CharTemplate.bIsCivilian = false;
 	CharTemplate.bIsPsionic = true;
