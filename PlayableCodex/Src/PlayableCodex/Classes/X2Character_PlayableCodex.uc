@@ -65,16 +65,23 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.DefaultLoadout = 'Codex_Loadout';
 	CharTemplate.RequiredLoadout = 'Codex_Loadout';
 
-	CharTemplate.Abilities.AddItem('Loot');
+	CharTemplate.Abilities.AddItem('Interact_PlantBomb');
+	CharTemplate.Abilities.AddItem('Interact_TakeVial');
+	CharTemplate.Abilities.AddItem('Interact_StasisTube');
+	CharTemplate.Abilities.AddItem('Interact_MarkSupplyCrate');
+	CharTemplate.Abilities.AddItem('Interact_ActivateAscensionGate');
+	CharTemplate.Abilities.AddItem('Interact_UseElevator');
+	CharTemplate.Abilities.AddItem('CarryUnit');
+	CharTemplate.Abilities.AddItem('PutDownUnit');
 	CharTemplate.Abilities.AddItem('Evac');
 	CharTemplate.Abilities.AddItem('PlaceEvacZone');
 	CharTemplate.Abilities.AddItem('LiftOffAvenger');
 	CharTemplate.Abilities.AddItem('Knockout');
 	CharTemplate.Abilities.AddItem('KnockoutSelf');
-	CharTemplate.Abilities.AddItem('Interact_MarkSupplyCrate');
-	CharTemplate.Abilities.AddItem('TriggerSuperpositionDamageListener');
+	CharTemplate.Abilities.AddItem('HunkerDown');
+	CharTemplate.Abilities.AddItem('DisableConsumeAllPoints');
+	CharTemplate.Abilities.AddItem('Revive');
 	CharTemplate.Abilities.AddItem('CodexImmunities');
-	CharTemplate.Abilities.AddItem('Interact_UseElevator');
 
 	CharTemplate.ImmuneTypes.AddItem('Poison');
 	CharTemplate.ImmuneTypes.AddItem('Mental');
