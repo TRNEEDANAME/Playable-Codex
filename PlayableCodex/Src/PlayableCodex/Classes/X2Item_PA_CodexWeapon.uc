@@ -42,7 +42,13 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 	Template.BaseDamage = default.PA_Codex_Weapon_BaseDamage;
 	Template.Aim = default.PA_Codex_Weapon_Aim;
 	Template.CritChance = default.PA_Codex_Weapon_CritChance;
-	Template.iClipSize = default.PA_Codex_Weapon_ClipSize;
+
+	if (default.PA_Codex_Weapon_InfiniteAmmo == false)
+	{
+		Template.iClipSize = default.PA_Codex_Weapon_ClipSize;
+	}
+
+	Template.InfiniteAmmo = default.PA_Codex_Weapon_InfiniteAmmo;
 	Template.iSoundRange = default.PA_Codex_Weapon_SoundRange;
 	Template.iEnvironmentDamage = default.PA_Codex_Weapon_EnvironmentalDamage;
 	Template.iIdealRange = default.PA_Codex_Weapon_IdealRange;
@@ -66,7 +72,6 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 	Template.CanBeBuilt = false;
 	Template.StartingItem = true;
 	Template.bInfiniteItem = true;
-	Template.InfiniteAmmo = default.PA_Codex_Weapon_InfiniteAmmo;
 
 	return Template;
 }

@@ -838,10 +838,6 @@ simulated function PACodex_PsiBombStage2_BuildVisualization(XComGameState Visual
 
 	defaultproperties
 {
-	CyberusTemplateName="Cyberus"
-	CyberusForcedDeadName="CyberusForcedDead"
 	Stage1PsiBombEffectName="Stage1PsiBombEffect"
 	PsiBombTriggerName="PsiBombTrigger"
-	DamageTeleportDamageChainIndexName="DamageTeleportDamageChainIndexName"
-	OriginalCyberusValueName="OriginalCyberusValue"
 }
