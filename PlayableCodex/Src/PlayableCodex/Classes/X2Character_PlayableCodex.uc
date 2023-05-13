@@ -81,7 +81,6 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.Abilities.AddItem('HunkerDown');
 	CharTemplate.Abilities.AddItem('DisableConsumeAllPoints');
 	CharTemplate.Abilities.AddItem('Revive');
-	CharTemplate.Abilities.AddItem('CodexImmunities');
 
 	CharTemplate.ImmuneTypes.AddItem('Poison');
 	CharTemplate.ImmuneTypes.AddItem('Mental');
@@ -89,6 +88,13 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.ImmuneTypes.AddItem('Berserk');
 	CharTemplate.ImmuneTypes.AddItem('Obsessed');
 	CharTemplate.ImmuneTypes.AddItem('Shattered');
+
+	CharTemplate.ImmuneTypes.AddItem('Fire');
+	CharTemplate.ImmuneTypes.AddItem('Poison');
+	CharTemplate.ImmuneTypes.AddItem(class'X2Item_DefaultDamageTypes'.default.ParthenogenicPoisonType);
+	CharTemplate.ImmuneTypes.AddItem('Acid');
+	CharTemplate.ImmuneTypes.AddItem(class'X2Item_DefaultDamageTypes'.default.KnockbackDamageType);
+
 
 	CharTemplate.bAllowSpawnFromATT = false;
 
