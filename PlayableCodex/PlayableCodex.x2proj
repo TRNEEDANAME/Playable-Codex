@@ -9,8 +9,12 @@
     <RootNamespace>PlayableCodex</RootNamespace>
     <ProjectGuid>{87e50347-ec41-4a5d-bc64-3b68270449d4}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
-  <ItemGroup>
+  <PropertyGroup>
+    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
+    <ScriptsDir>$(SolutionRoot).scripts\</ScriptsDir>
+    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
+  </PropertyGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />  <ItemGroup>
     <Folder Include="Config\" />
     <Folder Include="Localization\" />
     <Folder Include="Src\" />
