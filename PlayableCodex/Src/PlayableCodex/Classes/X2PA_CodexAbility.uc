@@ -836,7 +836,7 @@ simulated function PACodex_PsiBombStage2_BuildVisualization(XComGameState Visual
 	TypicalAbility_AddEffectRedirects(VisualizeGameState, CyberusBuildTrack);
 }
 
-	defaultproperties
+defaultproperties
 {
 	Stage1PsiBombEffectName="Stage1PsiBombEffect"
 	PsiBombTriggerName="PsiBombTrigger"

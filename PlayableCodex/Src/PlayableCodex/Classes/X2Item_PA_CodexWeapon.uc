@@ -57,8 +57,9 @@ static function X2DataTemplate CreateTemplate_PA_Codex_WPN()
 	Template.Abilities.AddItem('StandardShot');
 	Template.Abilities.AddItem('Overwatch');
 	Template.Abilities.AddItem('OverwatchShot');
-	Template.Abilities.AddItem('Reload');
 	Template.Abilities.AddItem('HotLoadAmmo');
+	Template.Abilities.AddItem('Reload');
+
 	
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = "WP_Cyberus_Gun.WP_CyberusRifle";

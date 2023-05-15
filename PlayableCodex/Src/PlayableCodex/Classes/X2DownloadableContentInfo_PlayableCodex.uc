@@ -1,10 +1,5 @@
 class X2DownloadableContentInfo_PlayableCodex extends X2DownloadableContentInfo config(Game);
 
-var config array<name> IncludedAlienClasses;
-var config array<name> IncludedAlienTemplates;
-var config int NumberOfAlienUtilitySlots;
-//var config name DominationAbility;
-
 exec function AddCodexSquaddie()
 {
 	local XComGameState_Unit NewSoldierState;
