@@ -345,7 +345,7 @@ static function X2AbilityTemplate PACodex_PsiBombStage1()
 	Template.AbilityMultiTargetStyle = RadiusMultiTarget;
 
 	MarkTilesEffect = new class'X2Effect_MarkValidActivationTiles';
-	MarkTilesEffect.AbilityToMark = 'PsiBombStage2';
+	MarkTilesEffect.AbilityToMark = 'PACodex_PsiBombStage2';
 	MarkTilesEffect.OnlyUseTargetLocation = true;
 	Template.AddShooterEffect(MarkTilesEffect);
 
@@ -393,7 +393,7 @@ function bool PsiBombDamagePreview(XComGameState_Ability AbilityState, StateObje
 
 	History = `XCOMHISTORY;
 	AbilityOwner = XComGameState_Unit(History.GetGameStateForObjectID(AbilityState.OwnerStateObject.ObjectID));
-	PsiBombStage2Ref = AbilityOwner.FindAbility('PsiBombStage2');
+	PsiBombStage2Ref = AbilityOwner.FindAbility('PACodex_PsiBombStage2');
 	PsiBombStage2Ability = XComGameState_Ability(History.GetGameStateForObjectID(PsiBombStage2Ref.ObjectID));
 	if( PsiBombStage2Ability == none )
 	{
