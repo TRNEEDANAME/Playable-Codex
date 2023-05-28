@@ -65,12 +65,12 @@ static function X2CharacterTemplate CreateTemplate_Codex()
 	CharTemplate.DefaultLoadout = 'Codex_Loadout';
 	CharTemplate.RequiredLoadout = 'Codex_Loadout';
 
+	CharTemplate.Abilities.AddItem('Loot');
 	CharTemplate.Abilities.AddItem('Interact_PlantBomb');
 	CharTemplate.Abilities.AddItem('Interact_TakeVial');
 	CharTemplate.Abilities.AddItem('Interact_StasisTube');
 	CharTemplate.Abilities.AddItem('Interact_MarkSupplyCrate');
 	CharTemplate.Abilities.AddItem('Interact_ActivateAscensionGate');
-	CharTemplate.Abilities.AddItem('Interact_UseElevator');
 	CharTemplate.Abilities.AddItem('CarryUnit');
 	CharTemplate.Abilities.AddItem('PutDownUnit');
 	CharTemplate.Abilities.AddItem('Evac');
