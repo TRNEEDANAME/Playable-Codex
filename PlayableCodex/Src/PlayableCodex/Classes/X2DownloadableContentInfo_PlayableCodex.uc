@@ -127,11 +127,6 @@ static function bool AbilityTagExpandHandler(string InString, out string OutStri
     case 'PACodex_TP_ActionPointCost':
 		OutString = string(class'X2PA_CodexAbility'.default.PACodex_TP_ActionPointCost);
         return true;
-
-    case 'PACodex_PsiBomb_ActionPointCost':
-        OutString = string(class'X2PA_CodexAbility'.default.PACodex_PsiBombStage1_ActionPointCost);
-        return false;
-
     default:
             return false;
     }  
