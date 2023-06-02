@@ -14,7 +14,8 @@
     <ScriptsDir>$(SolutionRoot).scripts\</ScriptsDir>
     <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
   </PropertyGroup>
-  <Import Project="$(BuildCommonRoot)XCOM2.targets" />  <ItemGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
+  <ItemGroup>
     <Folder Include="Config\" />
     <Folder Include="Localization\" />
     <Folder Include="Src\" />
@@ -53,5 +54,6 @@
     <Content Include="Src\PlayableCodex\Classes\X2PA_CodexAbility.uc" />
     <Content Include="Src\PlayableCodex\Classes\X2PA_CodexTech.uc" />
     <Content Include="Config\XcomInfiltration.ini" />
+    <Content Include="Config\XComGameCore.ini" />
   </ItemGroup>
 </Project>
